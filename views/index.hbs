@@ -1,0 +1,23 @@
+
+{{#each allData}}
+<div class="card">
+    <div class="name">
+        <img src={{{this.userImg}}} alt="{{{this.userName}}}">
+        <div class="user">
+        <span>{{{this.userName}}}</span>
+    </div>
+    </div>
+    <div class="mainImg">
+    <img src={{{this.mainImgLink}}} alt="{{this.imgAlt}}">
+    </div>
+    <div class="body">
+        <p>{{{this.text}}}</p>
+    </div>
+    <div class="like">
+        <img src="/img/like.jpg" alt="">
+        <img src="/img/comment.png" alt="">
+        <img src="/img/share.png" alt="">
+    </div>
+</div>
+<br><br><br>
+{{/each}}
